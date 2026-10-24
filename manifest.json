@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Real Download Button Finder",
+  "version": "1.0.0",
+  "description": "Finds the real download button on a page and flags fake ad buttons that redirect you.",
+  "permissions": ["activeTab", "scripting"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "Find the real download button" },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": { "default": "Alt+D" },
+      "description": "Find the real download button"
+    }
+  }
+}
